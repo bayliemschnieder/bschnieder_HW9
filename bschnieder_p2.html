@@ -8,7 +8,60 @@
   <body>
     <main>
       <h1>Business Analytics Student Survey</h1>
-
+      <div>
+        <fieldset>
+        <legend> I am finishing my </legend>
+        <label for="fyear"> 
+          <input type="radio" id="fyear" name="year" value="firstyear"  required /> first year at Iowa
+        </label>
+        <label for="syear">
+          <input type="radio" id="syear" name="year" value="secondyear" /> second year at Iowa
+        </label>
+        <label for="tyear">
+          <input
+            type="radio"
+            id="tyear"
+            name="year"
+            value="thridyear"
+          />third year at Iowa
+        </label>
+        <label for="fouryear">
+          <input type="radio" id="fouryear" name="year" value="fourthyear" /> fourth year at Iowa
+        </label>
+        <label for="fifyear">
+          <input type="radio" id="fifyear" name="year" value="fifthyear" /> fifth or more year at Iowa
+        </label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+        <legend> BAIS core class I have completed </legend>
+        <label for="infosys">Information Systems</label>
+        <input type="checkbox" id="infosys" name="class" value ="infosys" required > 
+        </label>    
+        <label for="ops">Operations</label>
+        <input type="checkbox" id="ops" name="class" value="ops"> 
+        </label>
+        <label for="foba">Foundations of Business Analytics</label>
+        <input type="checkbox" id="foba" name="class" value="foba">
+        </label>
+        <label for="compthink">Computational Thinking</label>
+        <input type="checkbox" id="compthink" name="class" value ="compthink"> 
+        </label>  
+        <label for="data">Database Management</label>
+        <input type="checkbox" id="data" name="class" value ="data"> 
+        </label>  
+        <label for="dw">Data Wrangling</label>
+        <input type="checkbox" id="dw" name="class" value ="dw"> 
+        </label> 
+        <label for="dm">Data Mining</label>
+        <input type="checkbox" id="dm" name="class" value ="dm"> 
+        </label>   
+        <label for="capstone">BAIS Capstone</label>
+        <input type="checkbox" id="capstone" name="class" value ="capstone"> 
+        </label>  
+        </fieldset>
+      </div>
       <button onclick="window.location.href='bschnieder_ty.html';">
         Finish
       </button>
