@@ -16,122 +16,128 @@
   <body>
     <main class="container">
       <h1>Business Analytics Student Survey</h1>
-      <form action="bschnieder_ty.html" method="get"></form>
-      <div>
+      <form action="bschnieder_ty.html" method="get">
+        <div>
+          <fieldset>
+            <legend>I am finishing my</legend>
+            <div class="form-check">
+              <label for="fyear">
+                <input
+                  type="radio"
+                  id="fyear"
+                  name="year"
+                  value="firstyear"
+                  required
+                />
+                first year at Iowa
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="syear">
+                <input type="radio" id="syear" name="year" value="secondyear" />
+                second year at Iowa
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="tyear">
+                <input type="radio" id="tyear" name="year" value="thridyear" />
+                third year at Iowa
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="fouryear">
+                <input
+                  type="radio"
+                  id="fouryear"
+                  name="year"
+                  value="fourthyear"
+                />
+                fourth year at Iowa
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="fifyear">
+                <input
+                  type="radio"
+                  id="fifyear"
+                  name="year"
+                  value="fifthyear"
+                />
+                fifth or more year at Iowa
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset>
-          <legend>I am finishing my</legend>
+          <legend>BAIS core class I have completed</legend>
           <div class="form-check">
-            <label for="fyear">
+            <label for="infosys">
               <input
-                type="radio"
-                id="fyear"
-                name="year"
-                value="firstyear"
+                type="checkbox"
+                id="infosys"
+                name="class"
+                value="infosys"
                 required
               />
-              first year at Iowa
+              Information Systems
             </label>
           </div>
           <div class="form-check">
-            <label for="syear">
-              <input type="radio" id="syear" name="year" value="secondyear" />
-              second year at Iowa
+            <label for="ops">
+              <input type="checkbox" id="ops" name="class" value="ops" />
+              Operations
             </label>
           </div>
           <div class="form-check">
-            <label for="tyear">
-              <input type="radio" id="tyear" name="year" value="thridyear" />
-              third year at Iowa
+            <label for="foba">
+              <input type="checkbox" id="foba" name="class" value="foba" />
+              Foundations of Business Analytics
             </label>
           </div>
           <div class="form-check">
-            <label for="fouryear">
+            <label for="compthink">
               <input
-                type="radio"
-                id="fouryear"
-                name="year"
-                value="fourthyear"
+                type="checkbox"
+                id="compthink"
+                name="class"
+                value="compthink"
               />
-              fourth year at Iowa
+              Computational Thinking
             </label>
           </div>
           <div class="form-check">
-            <label for="fifyear">
-              <input type="radio" id="fifyear" name="year" value="fifthyear" />
-              fifth or more year at Iowa
+            <label for="data">
+              <input type="checkbox" id="data" name="class" value="data" />
+              Database Management
+            </label>
+          </div>
+          <div class="form-check">
+            <label for="dw">
+              <input type="checkbox" id="dw" name="class" value="dw" /> Data
+              Wrangling
+            </label>
+          </div>
+          <div class="form-check">
+            <label for="dm">
+              <input type="checkbox" id="dm" name="class" value="dm" /> Data
+              Mining
+            </label>
+          </div>
+          <div class="form-check">
+            <label for="capstone">
+              <input
+                type="checkbox"
+                id="capstone"
+                name="class"
+                value="capstone"
+              />
+              BAIS Capstone
             </label>
           </div>
         </fieldset>
-      </div>
-      <fieldset>
-        <legend>BAIS core class I have completed</legend>
-        <div class="form-check">
-          <label for="infosys">
-            <input
-              type="checkbox"
-              id="infosys"
-              name="class"
-              value="infosys"
-              required
-            />
-            Information Systems
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="ops">
-            <input type="checkbox" id="ops" name="class" value="ops" />
-            Operations
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="foba">
-            <input type="checkbox" id="foba" name="class" value="foba" />
-            Foundations of Business Analytics
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="compthink">
-            <input
-              type="checkbox"
-              id="compthink"
-              name="class"
-              value="compthink"
-            />
-            Computational Thinking
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="data">
-            <input type="checkbox" id="data" name="class" value="data" />
-            Database Management
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="dw">
-            <input type="checkbox" id="dw" name="class" value="dw" /> Data
-            Wrangling
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="dm">
-            <input type="checkbox" id="dm" name="class" value="dm" /> Data
-            Mining
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="capstone">
-            <input
-              type="checkbox"
-              id="capstone"
-              name="class"
-              value="capstone"
-            />
-            BAIS Capstone
-          </label>
-        </div>
-      </fieldset>
-      <button type="submit" class="btn btn-secondary">Finish</button>
-      <footer>Page 2 of 2</footer>
+        <button type="submit" class="btn btn-secondary">Finish</button>
+        <footer>Page 2 of 2</footer>
+      </form>
     </main>
     <!-- Separate Popper and Bootstrap JS -->
     <script
