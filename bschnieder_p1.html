@@ -40,13 +40,14 @@
     />
     <link rel="stylesheet" href="./styles/stylesheet2.css" />
   </head>
-    <script src="https://kit.fontawesome.com/2b07cdef48.js" crossorigin="anonymous"></script>
   <body>
     <main class="container">
       <h1>Business Analytics Student Survey</h1>
       <form action="bschnieder_p2.html" method="get">
         <div class="hc">
-          <label for="home_country" style="display: block;"> My home country is</label>
+          <label for="home_country" style="display: block">
+            My home country is</label
+          >
           <input
             type="text"
             name="home_country"
@@ -55,9 +56,18 @@
             required
           />
         </div>
-        <div class="ht"> <label for="hometown" style="display: block;"> My home town is <p>What town did you live in before coming to college?<i class="fa-solid fa-circle-info fontawesome"></i></p> </label> <input type="text" name="hometown" id="hometown" required />
-        </div class = "hs">
-        <label for="state-select" style="display: block;">My home state is 
+
+        <div class="ht">
+          <label for="hometown" style="display: block"> My home town is </label>
+          <input type="text" name="hometown" id="hometown" required />
+          <p>
+            What town did you live in before coming to college?
+            <i class="fa-solid fa-circle-info fontawesome"></i>
+          </p>
+        </div>
+
+        <label for="state-select" style="display: block"
+          >My home state is
         </label>
         <select name="state" id="state-select">
           <option value="">-- choose state/territory --</option>
@@ -121,18 +131,19 @@
           <option value="VI">VI - U.S. Virgin Islands</option>
         </select>
         <div>
-          <label for="baismajor" style="display: block;">My impression of the BAIS major is</label>
-          <select name="bais" id="baismajor" required> 
+          <label for="baismajor" style="display: block"
+            >My impression of the BAIS major is</label
+          >
+          <select name="bais" id="baismajor" required>
             <option value="">-- choose impression --</option>
             <option value="vp">Very positive, value = 5</option>
             <option value="sp">Somewhat positive, value = 4</option>
             <option value="n">Neutral, value = 3</option>
             <option value="sn">Somewhat negative, value = 2</option>
-            <option value="vn">Very negative, value = 1</option> 
+            <option value="vn">Very negative, value = 1</option>
           </select>
         </div>
-        <button type="submit" class = "btn btn-secondary">Next</button>
-        </button>
+        <button type="submit" class="btn btn-secondary">Next</button>
       </form>
       <footer>Page 1 of 2</footer>
     </main>
